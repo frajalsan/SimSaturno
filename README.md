@@ -58,9 +58,6 @@ Este proyecto está bajo la MIT License – ver archivo LICENSE para más detall
 
 ## Autor
 
-frajalsan
-## Autor
-
 **frajalsan**  
 [GitHub](https://github.com/frajalsan)
 
