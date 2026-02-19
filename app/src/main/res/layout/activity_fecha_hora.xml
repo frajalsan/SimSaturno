@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fondo como imagen -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bad"
+        android:contentDescription="@string/fondo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Fila 1: Elegir Fecha y Hora -->
+    <LinearLayout
+        android:id="@+id/layoutFila1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/btnElegirFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha"
+            android:layout_marginEnd="24dp" />
+
+        <Button
+            android:id="@+id/btnElegirHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hora"
+            android:layout_marginStart="24dp" />
+    </LinearLayout>
+
+    <!-- Fila 2: Botón "Ahora" -->
+    <LinearLayout
+        android:id="@+id/layoutFila2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layoutFila1"
+        android:layout_marginTop="32dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnAhora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahora" />
+    </LinearLayout>
+
+    <!-- Fila 3: Botón "Simulador de Saturno" -->
+    <LinearLayout
+        android:id="@+id/layoutFila3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layoutFila2"
+        android:layout_marginTop="32dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnSimuladorSaturno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simulador de Saturno" />
+    </LinearLayout>
+
+    <!-- Botón "Atrás" -->
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atrás"
+        style="@android:style/Widget.Button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="#000000"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

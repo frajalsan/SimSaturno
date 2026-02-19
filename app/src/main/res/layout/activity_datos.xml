@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fondo como imagen -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bac"
+        android:contentDescription="@string/fondo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <!-- Fila 1: Botones centrales -->
+    <LinearLayout
+        android:id="@+id/layoutFila1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/btnDatosOrbitales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos Orbitales"
+            android:layout_marginEnd="24dp"/>
+
+        <Button
+            android:id="@+id/btnInformacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Información"
+            android:layout_marginStart="24dp"/>
+    </LinearLayout>
+
+    <!-- Fila 2: Botones debajo -->
+    <LinearLayout
+        android:id="@+id/layoutFila2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/layoutFila1"
+        android:layout_marginTop="32dp"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnCalculoPosicion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cálculo Posición"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnInsertarObservaciones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Insertar Observaciones"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnObservaciones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Observaciones"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atrás"
+        style="@android:style/Widget.Button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:background="#000000"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
